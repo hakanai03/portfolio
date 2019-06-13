@@ -2,7 +2,7 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-export default ({data}) => (
+export default ({ data }) => (
   <Layout>
     <SEO title="Home" />
     <h1>ポートフォリオ</h1>
@@ -10,9 +10,9 @@ export default ({data}) => (
     {data.allMarkdownRemark.edges.map(({ node }) =>
       <div key={node.id}>
         <span>
-            {node.frontmatter.title}{" "}
-              — {node.frontmatter.date}
-          </span>
+          {node.frontmatter.title}{" "}
+          — {node.frontmatter.date}
+        </span>
         <p>{node.excerpt}</p>
       </div>
     )}
