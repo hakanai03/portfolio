@@ -1,6 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
+  '@ant-design/icons': ^5.0.1
   '@types/md5': ^2.3.2
   '@types/react': ^18.0.27
   '@types/react-dom': ^18.0.10
@@ -12,6 +13,7 @@ specifiers:
   vite: ^4.1.0
 
 dependencies:
+  '@ant-design/icons': 5.0.1_biqbaboplfbrettd7655fr4n2y
   md5: 2.3.0
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
@@ -25,6 +27,44 @@ devDependencies:
   vite: 4.1.4
 
 packages:
+
+  /@ant-design/colors/7.0.0:
+    resolution: {integrity: sha512-iVm/9PfGCbC0dSMBrz7oiEXZaaGH7ceU40OJEfKmyuzR9R5CRimJYPlRiFtMQGQcbNMea/ePcoIebi4ASGYXtg==}
+    dependencies:
+      '@ctrl/tinycolor': 3.6.0
+    dev: false
+
+  /@ant-design/icons-svg/4.2.1:
+    resolution: {integrity: sha512-EB0iwlKDGpG93hW8f85CTJTs4SvMX7tt5ceupvhALp1IF44SeUFOMhKUOYqpsoYWQKAOuTRDMqn75rEaKDp0Xw==}
+    dev: false
+
+  /@ant-design/icons/5.0.1_biqbaboplfbrettd7655fr4n2y:
+    resolution: {integrity: sha512-ZyF4ksXCcdtwA/1PLlnFLcF/q8/MhwxXhKHh4oCHDA4Ip+ZzAHoICtyp4wZWfiCVDP0yuz3HsjyvuldHFb3wjA==}
+    engines: {node: '>=8'}
+    peerDependencies:
+      react: '>=16.0.0'
+      react-dom: '>=16.0.0'
+    dependencies:
+      '@ant-design/colors': 7.0.0
+      '@ant-design/icons-svg': 4.2.1
+      '@babel/runtime': 7.21.0
+      classnames: 2.3.2
+      rc-util: 5.29.2_biqbaboplfbrettd7655fr4n2y
+      react: 18.2.0
+      react-dom: 18.2.0_react@18.2.0
+    dev: false
+
+  /@babel/runtime/7.21.0:
+    resolution: {integrity: sha512-xwII0//EObnq89Ji5AKYQaRYiW/nZ3llSv29d49IuxPhKbtJoLP+9QUUZ4nVragQVtaVGeZrpB+ZtG/Pdy/POw==}
+    engines: {node: '>=6.9.0'}
+    dependencies:
+      regenerator-runtime: 0.13.11
+    dev: false
+
+  /@ctrl/tinycolor/3.6.0:
+    resolution: {integrity: sha512-/Z3l6pXthq0JvMYdUFyX9j0MaCltlIn6mfh9jLyQwg5aPKxkyNa0PTHtU1AlFXLNk55ZuAeJRcpvq+tmLfKmaQ==}
+    engines: {node: '>=10'}
+    dev: false
 
   /@esbuild/android-arm/0.16.17:
     resolution: {integrity: sha512-N9x1CMXVhtWEAMS7pNNONyA14f71VPQN9Cnavj1XQh6T7bskqiLLrSca4O0Vr8Wdcga943eThxnVp3JLnBMYtw==}
@@ -370,6 +410,10 @@ packages:
     resolution: {integrity: sha512-yrLQ/yVUFXkzg7EDQsPieE/53+0RlaWTs+wBrvW36cyilJ2SaDWfl4Yj7MtLTXleV9uEKefbAGUPv2/iWSooRA==}
     dev: false
 
+  /classnames/2.3.2:
+    resolution: {integrity: sha512-CSbhY4cFEJRe6/GQzIk5qXZ4Jeg5pcsP7b5peFSDpffpe1cqjASH/n9UTjBwOp6XpMSTwQ8Za2K5V02ueA7Tmw==}
+    dev: false
+
   /crypt/0.0.2:
     resolution: {integrity: sha512-mCxBlsHFYh9C+HVpiEacem8FEBnMXgU9gy4zmNC+SXAZNB/1idgp/aulFJ4FgCi7GPEVbfyng092GqL2k2rmow==}
     dev: false
@@ -479,6 +523,18 @@ packages:
       source-map-js: 1.0.2
     dev: true
 
+  /rc-util/5.29.2_biqbaboplfbrettd7655fr4n2y:
+    resolution: {integrity: sha512-xHT9Dr3RD6tyvCibnH10l3mudC6TJjWNr9UDy3CrOGZqTY354OfdwP87ahKNe0b3A1dsysDldvx0SBuswhlOeA==}
+    peerDependencies:
+      react: '>=16.9.0'
+      react-dom: '>=16.9.0'
+    dependencies:
+      '@babel/runtime': 7.21.0
+      react: 18.2.0
+      react-dom: 18.2.0_react@18.2.0
+      react-is: 16.13.1
+    dev: false
+
   /react-dom/18.2.0_react@18.2.0:
     resolution: {integrity: sha512-6IMTriUmvsjHUjNtEDudZfuDQUoWXVxKHhlEGSk81n4YFS+r/Kl99wXiwlVXtPBtJenozv2P+hxDsw9eA7Xo6g==}
     peerDependencies:
@@ -489,11 +545,19 @@ packages:
       scheduler: 0.23.0
     dev: false
 
+  /react-is/16.13.1:
+    resolution: {integrity: sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==}
+    dev: false
+
   /react/18.2.0:
     resolution: {integrity: sha512-/3IjMdb2L9QbBdWiW5e3P2/npwMBaU9mHCSCUzNln0ZCYbcfTsGbTJrU/kGemdH2IWmB2ioZ+zkxtmq6g09fGQ==}
     engines: {node: '>=0.10.0'}
     dependencies:
       loose-envify: 1.4.0
+    dev: false
+
+  /regenerator-runtime/0.13.11:
+    resolution: {integrity: sha512-kY1AZVr2Ra+t+piVaJ4gxaFaReZVH40AKNo7UCX6W+dEwBo/2oZJzqfuN1qLq1oL45o56cPaTXELwrTh8Fpggg==}
     dev: false
 
   /resolve/1.22.1:
