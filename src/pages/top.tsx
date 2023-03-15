@@ -1,3 +1,4 @@
+import { GithubOutlined, TwitterOutlined } from "@ant-design/icons";
 import md5 from "md5";
 
 const hash = md5("hakanai.blog@gmail.com");
@@ -29,11 +30,26 @@ export const Top = () => {
           alt="Gravatar Icon"
         />
       </div>
-      <p>hello! I'm shogo.</p>
+      <p>I'm shogo.</p>
       <p>
         Software Developer (Full Stack) / Web UI Designer / Infrastructure
         (Cloud, On-premise)
       </p>
+      <div
+        style={{
+          display: "flex",
+          gap: "1rem",
+          justifyContent: "center",
+          alignItems: "center",
+        }}
+      >
+        <a href="https://github.com/hakanai03">
+          <GithubOutlined style={{ fontSize: "2rem" }} />
+        </a>
+        <a href="https://twitter.com/i_shogo03" style={{ fontSize: "2rem" }}>
+          <TwitterOutlined />
+        </a>
+      </div>
     </div>
   );
 };
