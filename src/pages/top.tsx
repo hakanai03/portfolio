@@ -1,12 +1,13 @@
 import { GithubOutlined, TwitterOutlined } from "@ant-design/icons";
 import md5 from "md5";
+import { Background } from "../features/animations/Background";
 
 const hash = md5("hakanai.blog@gmail.com");
 const gravatarURL = `https://www.gravatar.com/avatar/${hash}?s=80`;
 
 export const Top = () => {
   return (
-    <div
+    <Background
       style={{
         height: "100svh",
         display: "flex",
@@ -50,6 +51,6 @@ export const Top = () => {
           <TwitterOutlined />
         </a>
       </div>
-    </div>
+    </Background>
   );
 };
