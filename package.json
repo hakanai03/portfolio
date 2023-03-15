@@ -1,48 +1,28 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "portfolio",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
-  "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
   "dependencies": {
-    "bootstrap": "^4.3.1",
-    "gatsby": "^2.9.2",
-    "gatsby-image": "^2.1.4",
-    "gatsby-plugin-manifest": "^2.1.1",
-    "gatsby-plugin-offline": "^2.1.3",
-    "gatsby-plugin-react-helmet": "^3.0.12",
-    "gatsby-plugin-sharp": "^2.1.5",
-    "gatsby-source-filesystem": "^2.0.39",
-    "gatsby-transformer-remark": "^2.3.12",
-    "gatsby-transformer-sharp": "^2.1.21",
-    "prop-types": "^15.7.2",
-    "react": "^16.8.6",
-    "react-bootstrap": "^1.0.0-beta.9",
-    "react-dom": "^16.8.6",
-    "react-helmet": "^5.2.1"
+    "@ant-design/icons": "^5.0.1",
+    "md5": "^2.3.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "three": "^0.150.1",
+    "vanta": "^0.5.24"
   },
   "devDependencies": {
-    "prettier": "^1.18.2",
-    "typescript": "^3.5.1",
-    "typescript-language-server": "^0.3.8"
-  },
-  "keywords": [
-    "gatsby"
-  ],
-  "license": "MIT",
-  "scripts": {
-    "build": "gatsby build",
-    "develop": "gatsby develop",
-    "format": "prettier --write src/**/*.{js,jsx}",
-    "start": "npm run develop",
-    "serve": "gatsby serve",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
-  },
-  "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "@types/md5": "^2.3.2",
+    "@types/react": "^18.0.27",
+    "@types/react-dom": "^18.0.10",
+    "@types/three": "^0.149.0",
+    "@vitejs/plugin-react-swc": "^3.0.0",
+    "typescript": "^4.9.3",
+    "vite": "^4.1.0"
   }
 }
