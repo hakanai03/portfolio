@@ -1,0 +1,14 @@
+@keyframes swinging {
+  0%,
+  100% {
+    transform: rotate(10deg);
+  }
+  50% {
+    transform: rotate(-10deg);
+  }
+}
+
+.swinging {
+  transform-origin: center bottom;
+  animation: swinging 0.1s linear infinite;
+}

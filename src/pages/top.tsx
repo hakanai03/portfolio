@@ -1,7 +1,13 @@
-import { GithubOutlined, TwitterOutlined } from "@ant-design/icons";
-import { Col, Grid, Row } from "antd";
+import {
+  CoffeeOutlined,
+  GithubOutlined,
+  TwitterOutlined,
+} from "@ant-design/icons";
+import { Col, Grid, Row, Typography } from "antd";
 import md5 from "md5";
 import { Background } from "../features/animations/Background";
+import { Shine } from "../features/animations/Shine";
+import { Swinging } from "../features/animations/Swinging";
 
 const hash = md5("hakanai.blog@gmail.com");
 const gravatarURL = `https://www.gravatar.com/avatar/${hash}?s=400`;
@@ -50,7 +56,9 @@ export const Top = () => {
               alt="Gravatar Icon"
             />
           </div>
-          <p>I'm shogo.</p>
+          <Typography.Title level={1}>
+            <Shine>I'm shogo.</Shine>
+          </Typography.Title>
         </div>
         <Row justify="center" gutter={[16, 16]} style={{ textAlign: "center" }}>
           <Col xs={span} sm={span}>

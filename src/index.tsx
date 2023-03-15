@@ -11,6 +11,7 @@ ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
       theme={{
         token: {
           fontFamily: '"Orbitron", sans-serif;',
+          colorText: "white",
         },
       }}
     >
