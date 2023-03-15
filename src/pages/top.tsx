@@ -4,7 +4,7 @@ import md5 from "md5";
 import { Background } from "../features/animations/Background";
 
 const hash = md5("hakanai.blog@gmail.com");
-const gravatarURL = `https://www.gravatar.com/avatar/${hash}?s=80`;
+const gravatarURL = `https://www.gravatar.com/avatar/${hash}?s=400`;
 
 export const Top = () => {
   const { md } = Grid.useBreakpoint();
