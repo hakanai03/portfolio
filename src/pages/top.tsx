@@ -42,7 +42,7 @@ export const Top = () => {
     >
       <div
         style={{
-          margin: "1rem",
+          margin: "1.5rem",
           height: "100%",
           display: "flex",
           flexDirection: "column",
@@ -73,7 +73,7 @@ export const Top = () => {
               alt="Gravatar Icon"
             />
           </div>
-          <Typography.Title level={1}>
+          <Typography.Title level={1} style={{margin: 0}}>
             <Shine style={{ textAlign: "center" }}>{name}</Shine>
           </Typography.Title>
         </div>
