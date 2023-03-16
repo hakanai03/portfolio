@@ -8,11 +8,28 @@ import md5 from "md5";
 import { Background } from "../features/animations/Background";
 import { Shine } from "../features/animations/Shine";
 import { Swinging } from "../features/animations/Swinging";
+import { useTypewriter } from "../features/hooks/useTypewriter";
 
 const hash = md5("hakanai.blog@gmail.com");
 const gravatarURL = `https://www.gravatar.com/avatar/${hash}?s=400`;
 
+const typingSpeed = 50; //[ms]
+
 export const Top = () => {
+  const name = useTypewriter("Hello! I'm Shogo.", typingSpeed, 100);
+  const domain1 = useTypewriter(
+    "Software Developer (Full Stack)",
+    typingSpeed,
+    1500
+  );
+  const domain2 = useTypewriter("Web UI Designer", typingSpeed, 1500);
+  const domain3 = useTypewriter(
+    "Infrastructure Engineer (Cloud, On-premise)",
+    typingSpeed,
+    1500
+  );
+  const slash1 = useTypewriter("/", 0, 1500);
+  const slash2 = useTypewriter("/", 0, 1500);
   const { md } = Grid.useBreakpoint();
   const span = md ? undefined : 24;
 
@@ -57,24 +74,24 @@ export const Top = () => {
             />
           </div>
           <Typography.Title level={1}>
-            <Shine>I'm shogo.</Shine>
+            <Shine style={{ textAlign: "center" }}>{name}</Shine>
           </Typography.Title>
         </div>
         <Row justify="center" gutter={[16, 16]} style={{ textAlign: "center" }}>
           <Col xs={span} sm={span}>
-            Software Developer (Full Stack)
+            {domain1}
           </Col>
           <Col xs={span} sm={span}>
-            /
+            {slash1}
           </Col>
           <Col xs={span} sm={span}>
-            Web UI Designer
+            {domain2}
           </Col>
           <Col xs={span} sm={span}>
-            /
+            {slash2}
           </Col>
           <Col xs={span} sm={span}>
-            Infrastructure (Cloud, On-premise)
+            {domain3}
           </Col>
         </Row>
         <div
