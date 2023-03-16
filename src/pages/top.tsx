@@ -20,16 +20,16 @@ export const Top = () => {
   const domain1 = useTypewriter(
     "Software Developer (Full Stack)",
     typingSpeed,
-    1500
+    1200
   );
-  const domain2 = useTypewriter("Web UI Designer", typingSpeed, 1500);
+  const slash1 = useTypewriter("/", 0, 3000);
+  const domain2 = useTypewriter("Web UI Designer", typingSpeed, 3000);
+  const slash2 = useTypewriter("/", 0, 4100);
   const domain3 = useTypewriter(
     "Infrastructure Engineer (Cloud, On-premise)",
     typingSpeed,
-    1500
+    4100
   );
-  const slash1 = useTypewriter("/", 0, 1500);
-  const slash2 = useTypewriter("/", 0, 1500);
   const { md } = Grid.useBreakpoint();
   const span = md ? undefined : 24;
 
