@@ -1,19 +1,46 @@
-import {
-  CoffeeOutlined,
-  GithubOutlined,
-  TwitterOutlined,
-} from "@ant-design/icons";
+import { GithubOutlined, TwitterOutlined } from "@ant-design/icons";
 import { Col, Grid, Row, Typography } from "antd";
 import md5 from "md5";
 import { Background } from "../features/animations/Background";
 import { Shine } from "../features/animations/Shine";
-import { Swinging } from "../features/animations/Swinging";
 import { useTypewriter } from "../features/hooks/useTypewriter";
 
 const hash = md5("hakanai.blog@gmail.com");
 const gravatarURL = `https://www.gravatar.com/avatar/${hash}?s=400`;
 
 const typingSpeed = 50; //[ms]
+
+const sayHelloToDevs = () => {
+  const messages = [
+    {
+      text: "Hey there, curious one!",
+      style:
+        "background: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red); color: white; padding: 5px; font-size: 20px;",
+    },
+    {
+      text: "This page is built with React and TypeScript, you know?",
+      style: "color: cyan; font-size: 18px;",
+    },
+    {
+      text: "The background animation? That's made with THREE.js!",
+      style: "color: lime; font-size: 16px;",
+    },
+    {
+      text: "Wanna check the source code? Go to https://github.com/hakanai03/portfolio !",
+      style: "color: magenta; font-size: 14px;",
+    },
+    {
+      text: "Alright then, happy exploring!",
+      style: "color: yellow; font-size: 12px;",
+    },
+  ];
+
+  messages.forEach((message) => {
+    console.log(`%c${message.text}`, message.style);
+  });
+};
+
+sayHelloToDevs()
 
 export const Top = () => {
   const name = useTypewriter("Hello! I'm Shogo.", typingSpeed, 100);
@@ -73,7 +100,7 @@ export const Top = () => {
               alt="Gravatar Icon"
             />
           </div>
-          <Typography.Title level={1} style={{margin: 0}}>
+          <Typography.Title level={1} style={{ margin: 0 }}>
             <Shine style={{ textAlign: "center" }}>{name}</Shine>
           </Typography.Title>
         </div>

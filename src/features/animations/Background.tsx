@@ -1,10 +1,7 @@
 import { FC, ReactNode, useEffect, useRef } from "react";
 import * as THREE from "three";
 import FOG from "vanta/dist/vanta.fog.min.js";
-
-const useMountEffect = (func: () => void | (() => void)) => {
-  useEffect(func, []);
-};
+import { useMountEffect } from "../hooks/useMountEffect";
 
 export const Background: FC<{
   children?: ReactNode;
@@ -30,7 +27,7 @@ export const Background: FC<{
       zoom: 0.5,
     });
 
-    return () => effect.destroy()
+    return () => effect.destroy();
   });
 
   return (
