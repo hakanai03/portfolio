@@ -42,7 +42,7 @@ export const Top = () => {
     >
       <div
         style={{
-          margin: "1.5rem",
+          margin: "-3% 1.5rem 0 1.5rem",
           height: "100%",
           display: "flex",
           flexDirection: "column",
